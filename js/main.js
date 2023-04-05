@@ -96,7 +96,7 @@ function startGame(username, window){
 
     document.addEventListener("keydown", keyCheck)
     startTimer()
-    startBack()
+    backAnimation()
     
 
     
