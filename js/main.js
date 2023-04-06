@@ -40,12 +40,13 @@ function startGame(username, window){
     back2.style.left = "100%"
 
 
-
+    
     let left = 1024
     for (let i = 0; i < walls.length; i++) {
         let wall = walls[i];
         changeWall(wall)
         wall.style.left = left+i*300 + "px"
+        console.log("cahnge")
 
     }
 
@@ -143,18 +144,16 @@ function startGame(username, window){
 
     var wallInterval
     function startWall() {
-        // background
+        // wall animation 
         wallInterval = setInterval(wallAnimation, 10)
     }
 
     function stopWall() {
-        // background
+        // wall animation
         clearInterval(wallInterval)
     }
-
     function changeWall(wall){
-        // pouse()
-        wall.style.left = "1324px"
+        wall.style.left = parseInt(wall.style.left) + 1200 + 'px'
         let = [wallHeight, pos] = randPos()
         wall.style.height = wallHeight + "px"
         console.log(pos, wallHeight)
@@ -173,7 +172,7 @@ function startGame(username, window){
         for (let i = 0; i < walls.length; i++) {
             let wall = walls[i];
             wall.style.left = parseFloat(wall.style.left) - 2.1 + "px";
-            if (parseFloat(wall.style.left) <= 46) {
+            if (parseFloat(wall.style.left) <= 46) {          
                 changeWall(wall)
             }
         }
