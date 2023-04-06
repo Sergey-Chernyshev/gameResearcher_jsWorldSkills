@@ -324,8 +324,8 @@ body {
 
 
 .modal-raking,
-.modal-name,
-.modal-lose {
+.modal-name, 
+.close {
     display: none;
 }
 

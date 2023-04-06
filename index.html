@@ -13,7 +13,7 @@
 <div id="game">
 
     <!-- gems rules modal start -->
-    <div class="modal modal-rules close">
+    <div class="modal modal-rules showElement">
         <div class="modal-wrap">
             <div class="modal-title-border flex-row flex-sb flex-aic">
                 <h2>Напишите ваше имя</h2>
@@ -31,18 +31,17 @@
     <!-- gems rules modal end -->
 
     <!-- gems rules modal start -->
-    <div class="modal modal-raking">
+    <div class="modal modal-raking show showElement">
         <div class="modal-wrap">
             <div class="modal-title-border flex-row flex-sb flex-aic">
                 <h2>Рейтинговая таблица</h2>
             </div>
-            <div class="table flex-col">
-                <div class="flex-row flex-sb">
+            <div class="table flex-col rent">
+                <div class="flex-row flex-sb stroka">
                     <div class="column">#</div>
                     <div class="column">Имя</div>
                     <div class="column">Время полета</div>
                 </div>
-
             </div>
             <div class="btn btn-reload">
                 <p>Заново</p>
@@ -64,7 +63,7 @@
     </div>
 
     <!-- gems rules modal start -->
-    <div class="modal modal-lose">
+    <div class="modal  modal-lose  showElement close">
         <div class="modal-wrap">
             <div class="modal-title-border flex-row flex-sb flex-aic">
                 <h2>Вы проиграли!</h2>
@@ -83,16 +82,15 @@
     <div class="wall" style="height: 250px; left: 1324px;"></div>
     <div class="wall" style="height: 200px; left: 1324px;"></div>
     <div class="wall" style="height: 200px; left: 1324px;"></div>
-
-    <img class="battery" style="top: 300px; left: 280px" src="img/battery.png" alt="battery">
+    <img class="battery" style="top: 300px;" src="img/battery.png" alt="battery">
     <img class="background" id="b1" src="img/beton_texture.jpg" alt="battery">
     <img class="background" id="b2" src="img/beton_texture.jpg" alt="battery">
 
 
-    <img id="player" class="element" src="img/quadcopter.png" alt="quadcopter">
+    <img id="player" class="element showPlayer" src="img/quadcopter.png" alt="quadcopter">
 </div>
 <!-- game end -->
 </body>
 </html>
 
-<script src="/js/main.js"></script>
+<script src="js/main.js"></script>
