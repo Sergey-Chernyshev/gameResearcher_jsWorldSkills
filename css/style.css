@@ -95,19 +95,12 @@ body {
     width: 1024px;
     height: 768px;
     position: relative;
+    
     /* background: url("../img/beton_texture.jpg"); */
     overflow: hidden;
     /* -webkit-animation:mymove 10s linear infinite;
     animation:mymove 10s linear infinite; */
 
-}
-.background{
-    width: 10240px;
-    height: 768px;
-    background: url("../img/beton_texture.jpg");
-    /* position: absolute; */
-    /* float: left; */
-    z-index: 10;
 }
 
 /* @-webkit-keyframes mymove {
@@ -371,6 +364,8 @@ body {
     height: 768px;
     float: left;
     top: 0px; 
-    left: -100px;
+    left: 100%;
     z-index: 0;
+    margin: 0;
+    padding: 0;
 }
